@@ -1,0 +1,71 @@
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#"><strong>PW</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <div class="md-form mt-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+    
+    <div class="row">
+    <div class="col-sm-7">     
+        
+       <div class=" wow fadeInRight d-flex justify-content-left" data-wow-delay="0.3s">
+            <img src="https://cdn.junglecreations.com/wp/junglecms/2019/08/5711cef6-piggy-bank-3.jpg" width="100%" height="650px" alt="" class="img-responsive">
+            
+        </div>
+        
+       
+    </div>
+    <div class="col-sm-5">
+       
+        <div style="padding-top: '150px';">
+           <span style="color:#1D2228;padding-left: '70px'; font-size: 25px;font-family: 'Lora', serif; text-align: center; margin-right: 90px;">
+               <strong> PIGGY-WALLET LOGIN</strong>
+                </span>
+            <div class="jumbotron" style="background-color: '#1D2228';" >
+                <form >
+            <div class="form-group">
+                    <label style="color: '#E1E2E2';"> CustomerId:</label>
+                    <input type="text" name="id" class="form-control" [(ngModel)]="id"/>
+                </div>
+                
+                <div class="form-group">
+                    <label style="color: '#E1E2E2';"> Password:</label>
+                    <input type="password" name="pass" class="form-control" [(ngModel)]="pass"/>
+                </div>
+               <button class="btn btn-primary" type="submit" value="save" (click)="login()"style="background-color: '#FB8122';">Login</button>
+               <button class="btn btn-primary" type="submit" value="register" (click)="register()" style="background-color: '#FB8122';" style="padding-left:'10px' ; padding-right:'10px' ; margin-left: '20px';">New User</button>
+              </form>
+              <a (click)='adminlogin()'style="color: '#FB8122'; "><u>Login as admin</u></a>
+              
+        </div>
+        
+          
+       
+    </div>
+
+    </div>
+</div>

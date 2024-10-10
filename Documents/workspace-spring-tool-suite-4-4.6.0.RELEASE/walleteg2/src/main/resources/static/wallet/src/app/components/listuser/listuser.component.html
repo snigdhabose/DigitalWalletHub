@@ -1,0 +1,36 @@
+<nav class="navbar navbar-dark bg-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>PW</strong></a>
+      <button class="btn btn-primary" type="submit" value="save" (click)="logout()"
+      style="background-color: '#FB8122';">Logout</button>
+      
+    </div>
+  </nav>
+
+<div class="container" style="margin-top: '150px';">
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Phone Number</th>
+        <th>Account Number</th>
+        <th>Password</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.pno}}</td>
+        <td>{{user.accountNo}}</td>
+        <td>{{user.pass}}</td>
+        <td> <input type="button" value="Update" (click)="update(user)"/> </td>
+        <td> <input type="button" value="Delete" (click)="delete(user)"/> </td>
+    </tr>
+</table>
+<button class="btn btn-primary" (click)="newUser()" style="margin-left: '920px';"> Add New User</button>
+</div>
